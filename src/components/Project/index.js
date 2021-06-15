@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../Card';
+import MyCard from '../MyCard';
 
 function Project() {
     const projectArr = [
@@ -32,7 +32,7 @@ function Project() {
     return(
         <div id="project-container">
             {projectArr.map(proj => {
-                return <Card {...proj} />
+                return <MyCard {...proj} />
             })}
             {console.log('i made a card!')}
         </div>
