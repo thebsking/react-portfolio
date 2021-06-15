@@ -5,19 +5,29 @@ function Project() {
     const projectArr = [
         {
             title: 'Loo Review',
-            img: '',
+            img: '/logo192.png',
             link: ''
         },
         {
-            title: 'Loo Review',
-            img: '',
+            title: 'Weather Search',
+            img: '/logo192.png',
             link: ''
         },
         {
-            title: 'Loo Review',
-            img: '',
+            title: 'Budget App',
+            img: '/logo192.png',
             link: ''
-        }
+        },{
+            title: 'Tech Blog',
+            img: '/logo192.png',
+            link: ''
+        },
+        {
+            title: 'Employee Directory',
+            img: '/logo192.png',
+            link: ''
+        },
+
     ]
     return(
         <div id="project-container">

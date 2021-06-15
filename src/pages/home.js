@@ -17,7 +17,7 @@ function Home() {
         {
             desc: 'jQuery',
             icon: <i className="devicon-jquery-plain colored" />
-        },{
+        }, {
             desc: 'NodeJs',
             icon: <i className="devicon-nodejs-plain colored" />
         },
@@ -38,7 +38,7 @@ function Home() {
             icon: <i class="devicon-wordpress-plain colored"></i>
         }
     ]
-    return(
+    return (
         <main>
             <section id="welcome">
                 <h3>about me</h3>
@@ -50,11 +50,12 @@ function Home() {
                 {skillsArr.map(skill => {
                     return (
                         <>
-                        <span>{skill.icon}</span>
-                       <span>{skill.desc}</span>
-                       </>
+                            <span>{skill.icon}</span>
+                            <span>{skill.desc}</span>
+                        </>
                     )
                 })}
+
             </section>
         </main>
     )
