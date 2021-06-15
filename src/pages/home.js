@@ -32,6 +32,10 @@ function Home() {
         {
             desc: 'React',
             icon: <i className="devicon-react-plain colored" />
+        },
+        {
+            desc: 'WordPress',
+            icon: <i class="devicon-wordpress-plain colored"></i>
         }
     ]
     return(
@@ -45,8 +49,10 @@ function Home() {
                 <h3>skills</h3>
                 {skillsArr.map(skill => {
                     return (
-                        <span>{skill.icon}
-                       {skill.desc}</span>
+                        <>
+                        <span>{skill.icon}</span>
+                       <span>{skill.desc}</span>
+                       </>
                     )
                 })}
             </section>
