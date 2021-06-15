@@ -3,7 +3,6 @@ import React from 'react';
 function Card(props) {
     return(
         <div className="card">
-            <a href={props.link}>
             <div className="card-header">
                 <h2>{props.title}</h2>
             </div>
@@ -13,7 +12,6 @@ function Card(props) {
             <div className="card-footer">
                 <p>{props.description}</p>
             </div>
-            </a>
         </div>
     )
 }

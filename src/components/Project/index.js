@@ -6,26 +6,26 @@ function Project() {
         {
             title: 'Loo Review',
             img: '/logo192.png',
-            link: ''
+            link: '/loo-review'
         },
         {
             title: 'Weather Search',
             img: '/logo192.png',
-            link: ''
+            link: '/weather-search'
         },
         {
             title: 'Budget App',
             img: '/logo192.png',
-            link: ''
+            link: '/pwa-budget'
         },{
             title: 'Tech Blog',
             img: '/logo192.png',
-            link: ''
+            link: 'tech-blog'
         },
         {
             title: 'Employee Directory',
             img: '/logo192.png',
-            link: ''
+            link: 'react-directory'
         },
 
     ]
