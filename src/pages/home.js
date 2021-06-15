@@ -1,17 +1,51 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer'
 
 function Home() {
-
+    const skillsArr = [
+        {
+            desc: 'HTML5',
+            icon: ''
+        },
+        {
+            desc: 'CSS3',
+            icon: ''
+        },
+        {
+            desc: 'JavaScript',
+            icon: ''
+        },
+        {
+            desc: 'jQuery',
+            icon: ''
+        },{
+            desc: 'NodeJs',
+            icon: ''
+        },
+        {
+            desc: 'React',
+            icon: ''
+        },
+        {
+            desc: 'MongoDb',
+            icon: ''
+        },
+        {
+            desc: 'MySql',
+            icon: ''
+        }
+    ]
     return(
         <main>
             <section id="welcome">
-                <h1>React Router Works</h1>
                 {/* content here */}
             </section>
-            <section id="about-me">
-                {/* content here */}
+            <section id="technologies">
+                <h3>Skills</h3>
+                {skillsArr.map(skill => {
+                    return (
+                        <img src={skill.icon} alt={`${skill.desc} icon`} />
+                    )
+                })}
             </section>
         </main>
     )

@@ -1,6 +1,5 @@
 import Footer from '../src/components/Footer'
 import Header from '../src/components/Header';
-import Project from '../src/components/Project';
 import Home from '../src/pages/Home'
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
