@@ -23,18 +23,15 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  grid-template-rows: repeat(3, 6em);
+  grid-row-gap: 5px;
+}
 .App-link {
   color: #61dafb;
 }
 .colored {
   font-size: 5em;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

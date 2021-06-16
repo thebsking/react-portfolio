@@ -47,14 +47,15 @@ function Home() {
             </section>
             <section id="technologies">
                 <h3>skills</h3>
+                <div className='skill-container'>
                 {skillsArr.map(skill => {
                     return (
-                        <>
-                            <span>{skill.icon}</span>
-                            <span>{skill.desc}</span>
-                        </>
+                    
+                            <span className='skill-logo'>{skill.icon}</span>
+                        
                     )
                 })}
+                 </div>
 
             </section>
         </main>

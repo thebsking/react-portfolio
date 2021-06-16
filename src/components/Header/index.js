@@ -6,7 +6,6 @@ function Header() {
     return(
         <div className="header">
             <img id="bk-logo" src="/bk-logo.png" alt="logo"></img>
-            <Navbar />
         </div>
     )
 }

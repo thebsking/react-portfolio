@@ -1,21 +1,36 @@
-import React from 'react';
-import 'semantic-ui-react'
-import './navbar.css';
+import React, { Component } from 'react';
+import { Menu } from 'semantic-ui-react';
 
-function Navbar() {
-    return (
-        <ul>
-            <li className="item">
-                <a href='/'>Home</a>
-            </li>
-            <li className="item">
-                <a href='/gallery'>Portfolio</a>
-            </li>
-            <li className="item" >
-                <a href='/contact'>Contact</a>
-            </li>
-        </ul>
-    )
+class Navbar extends Component {
+    state = {activeItem: 'home'};
+
+    handleMenuClick = (event, { name }) => {
+        this.setState({ activeItem: name })
+    }
+    render() {
+        const { activeItem } = this.state
+        
+        return (
+            <Menu pointing secondary vertical>
+                <Menu.Item 
+                name='home' 
+                active={activeItem === 'home'} 
+                onClick={this.handleMenuClick} 
+                href="/"
+                />
+                <Menu.Item name='gallery' 
+                active={activeItem === 'gallery'} 
+                onClick={this.handleMenuClick}
+                href="/gallery"
+                />
+                <Menu.Item name='contact' 
+                active={activeItem === 'contact'} 
+                onClick={this.handleMenuClick} 
+                href="/contact"
+                />
+            </Menu>
+        )
+    }
 }
 
 export default Navbar;
