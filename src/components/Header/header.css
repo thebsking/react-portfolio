@@ -1,0 +1,7 @@
+#bk-logo {
+    width: 25%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
