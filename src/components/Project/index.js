@@ -38,7 +38,7 @@ function Project() {
     ]
     return (
         <div id="project-container">
-            <Card.Group itemsPerRow={2}>
+            <Card.Group>
                 {projectArr.map(proj => {
                     return <MyCard {...proj} />
                 })}

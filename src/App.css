@@ -1,7 +1,10 @@
 body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+}
+main {
+  grid-area: 3;
+  width: 80%;
 }
 .App {
   text-align: center;
@@ -22,12 +25,6 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-.skill-container {
-  display: grid;
-  grid-template-columns: repeat(3, 25%);
-  grid-template-rows: repeat(3, 6em);
-  grid-row-gap: 5px;
 }
 .App-link {
   color: #61dafb;

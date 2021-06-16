@@ -2,6 +2,6 @@
     width: 25%;
 }
 .header {
-    display: flex;
-    justify-content: space-between;
+    grid-area: 1;
+    background-color: #444;
 }

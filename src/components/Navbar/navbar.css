@@ -1,3 +1,7 @@
+#nav {
+    grid-area: 2;
+    height: 80vh;
+}
 ul {
     display: flex;
     justify-content: space-evenly;

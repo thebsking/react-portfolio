@@ -1,36 +1,52 @@
 import React, { Component } from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Button, Grid, Icon, Image, Menu, Segment, Sidebar } from 'semantic-ui-react';
+import './navbar.css'
+
+const VerticalSidebar = ({animation, direction, visible}) => (
+    <Sidebar 
+        as={Menu}
+        animation={animation}
+        direction={direction}
+        icon='labeled'
+        inverted
+        vertical
+        visible={visible}
+        width='thin'
+    >
+        <Menu.Item as='a'>
+            <Icon name='home' />
+            Home
+        </Menu.Item>
+        <Menu.Item as='a'>
+            <Icon name='envira gallery'/>
+            Portfolio
+        </Menu.Item>
+        <Menu.Item as='a'>
+            <Icon name='write' />
+            Contact
+        </Menu.Item>
+    </Sidebar>
+)
+
+function menuReducer(state, action) {
+    switch (action.type) {
+        case 'CHANGE_ANIMATION':
+            return {...state, animation: action.animation, visible: !state.visible}
+        case 'CHANGE_DIMMED':
+            return {...state, dimmed: action.dimmed}
+        case 'CHANGE_DIRECTION':
+            return {...state, direction: action.direction, visible: false }
+        default: 
+            throw new Error()
+    }
+}
+
+function menuTransitions() {
+    
+}
 
 class Navbar extends Component {
-    state = {activeItem: 'home'};
-
-    handleMenuClick = (event, { name }) => {
-        this.setState({ activeItem: name })
-    }
-    render() {
-        const { activeItem } = this.state
-        
-        return (
-            <Menu pointing secondary vertical>
-                <Menu.Item 
-                name='home' 
-                active={activeItem === 'home'} 
-                onClick={this.handleMenuClick} 
-                href="/"
-                />
-                <Menu.Item name='gallery' 
-                active={activeItem === 'gallery'} 
-                onClick={this.handleMenuClick}
-                href="/gallery"
-                />
-                <Menu.Item name='contact' 
-                active={activeItem === 'contact'} 
-                onClick={this.handleMenuClick} 
-                href="/contact"
-                />
-            </Menu>
-        )
-    }
+    
 }
 
 export default Navbar;
