@@ -1,52 +1,48 @@
 import React, { Component } from 'react';
-import { Button, Grid, Icon, Image, Menu, Segment, Sidebar } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 import './navbar.css'
 
-const VerticalSidebar = ({animation, direction, visible}) => (
-    <Sidebar 
-        as={Menu}
-        animation={animation}
-        direction={direction}
-        icon='labeled'
-        inverted
-        vertical
-        visible={visible}
-        width='thin'
-    >
-        <Menu.Item as='a'>
-            <Icon name='home' />
-            Home
-        </Menu.Item>
-        <Menu.Item as='a'>
-            <Icon name='envira gallery'/>
-            Portfolio
-        </Menu.Item>
-        <Menu.Item as='a'>
-            <Icon name='write' />
-            Contact
-        </Menu.Item>
-    </Sidebar>
-)
+class Navbar extends Component {
+    state = {}
 
-function menuReducer(state, action) {
-    switch (action.type) {
-        case 'CHANGE_ANIMATION':
-            return {...state, animation: action.animation, visible: !state.visible}
-        case 'CHANGE_DIMMED':
-            return {...state, dimmed: action.dimmed}
-        case 'CHANGE_DIRECTION':
-            return {...state, direction: action.direction, visible: false }
-        default: 
-            throw new Error()
+    handleItemClick = (evt, { name }) => this.setState({ activeItem: name })
+
+    render() {
+        const { activeItem } = this.state
+        return (
+            <Menu stackable inverted id='main-nav'>
+                <Menu.Item
+                    name='home'
+                    active={activeItem === 'home'}
+                    onClick={this.handleItemClick}
+                    href='/'
+                    color='red'
+                >
+                    home
+                </Menu.Item>
+                <Menu.Item
+                    name='portfolio'
+                    active={activeItem === 'portfolio'}
+                    onClick={this.handleItemClick}
+                    href='/gallery'
+                    color='red'
+                >
+                    portfolio
+                </Menu.Item>
+                <Menu.Item
+                    color='red'
+                    name='contact'
+                    active={activeItem === 'contact'}
+                    onClick={this.handleItemClick}
+                    href='/contact'
+                >
+                    contact
+                </Menu.Item>
+
+            </Menu>
+        )
     }
 }
 
-function menuTransitions() {
-    
-}
-
-class Navbar extends Component {
-    
-}
 
 export default Navbar;

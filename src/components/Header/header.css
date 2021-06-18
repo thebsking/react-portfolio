@@ -1,7 +1,10 @@
 #bk-logo {
-    width: 25%;
+    height: 50%;
+    width: 50%;
 }
 .header {
-    grid-area: 1;
+    display: flex;
     background-color: #444;
+    justify-content: space-between;
+    align-items: center;
 }
