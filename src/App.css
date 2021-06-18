@@ -1,7 +1,17 @@
-
+body {
+  background-color: #444;
+  color: white;
+}
 main {
-  width: 80%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+main > section {
+  width: 70%;
+  margin: 0 auto 0 auto;
 }
 .App {
   text-align: center;
@@ -33,4 +43,16 @@ main {
 }
 .colored {
   font-size: 5em;
+}
+#main-nav {
+  margin-top: 0;
+}
+.ui.item.menu {
+  background-color: #222;
+}
+.ui.item.menu > a{
+  color: darkgray
+}
+.ui.item.menu > a:hover{
+  color: red;
 }

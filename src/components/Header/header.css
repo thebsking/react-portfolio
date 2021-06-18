@@ -1,10 +1,10 @@
 #bk-logo {
     height: 25%;
     width: 25%;
+    float: left;
+    margin: 0 5px 5px 15px;
+    
 }
-.top-header {
-    display: flex;
-    background-color: #444;
-    justify-content: space-between;
-    align-items: center;
+.top-header > h1 {
+    text-align: center;
 }
