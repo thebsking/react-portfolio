@@ -6,20 +6,42 @@ main {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-height: 100vh;
 }
+a {
+  color: red;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
 main > section {
-  width: 70%;
+  width: 90%;
   margin: 0 auto 0 auto;
 }
 .App {
   text-align: center;
 }
-
+#welcome {
+  display: flex;
+  align-items: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+#technologies > h3 {
+  float: left;
+}
+#resume >h3 {
+  float: left;
+  height: fit-content
+}
+.res-container {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 .skill-container{
   display: grid;
@@ -28,6 +50,9 @@ main > section {
 }
 .skill-logo{
   margin: 5px;
+}
+#social > h3 {
+  float: left;
 }
 .App-header {
   background-color: #282c34;
@@ -45,6 +70,12 @@ main > section {
 #main-nav {
   margin-top: 0;
 }
+#bk-image {
+  width: 25%;
+  height: 25%;
+  border-radius: 25px;
+  margin: 10px;
+}
 .ui.item.menu {
   background-color: #222;
 }
@@ -53,4 +84,12 @@ main > section {
 }
 .ui.item.menu > a:hover{
   color: red;
+}
+@media screen and (min-width:768px) {
+  #bk-logo {
+    width: 10%;
+  }
+  #bk-image {
+    width: 15%;
+  }
 }

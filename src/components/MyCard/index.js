@@ -3,7 +3,7 @@ import {Card, Image, Button} from 'semantic-ui-react'
 
 function MyCard(props) {
     return(
-        <Card fluid color='red' raised='true'>
+        <Card fluid color='red' raised={true}>
             <Image src={props.img} alt="project preview" />
             <Card.Content>
                 <Card.Header>{props.title}</Card.Header>
