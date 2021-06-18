@@ -1,10 +1,7 @@
-body {
-  min-height: 100vh;
-  width: 100%;
-}
+
 main {
-  grid-area: 3;
   width: 80%;
+  text-align: center;
 }
 .App {
   text-align: center;
@@ -14,8 +11,13 @@ main {
   height: 40vmin;
   pointer-events: none;
 }
-
-
+.skill-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.skill-logo{
+  margin: 5px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
