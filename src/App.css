@@ -7,7 +7,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 a {
   color: red;
@@ -75,6 +75,11 @@ main > section {
 .social-link:hover {
   transform: scale(105%);
 }
+.form-container {
+  margin: 50px auto 10px auto;
+  width: 80%;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

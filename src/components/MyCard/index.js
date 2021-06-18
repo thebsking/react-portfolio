@@ -13,7 +13,7 @@ function MyCard(props) {
                 <Button className="card-btn-link" target="_blank"href={`https://github.com/thebsking${props.link}`}>
                     GitHub Repo
                 </Button>
-                <Button href={""} 
+                <Button href={props.link2} 
                 target="_blank"
                 className="card-btn-link">
                     Deployed App
