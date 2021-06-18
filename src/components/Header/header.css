@@ -1,10 +1,37 @@
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #bk-logo {
-    height: 25%;
-    width: 25%;
-    float: left;
-    margin: 0 5px 5px 15px;
+    height: 30%;
+    width: 30%;
+    /* margin: 0 5px 5px 15px; */
+}
+.shine{
+    font-size: 5em;
+    margin-right: 25px;
+    margin-bottom: 15px !important;
+
+    background: linear-gradient(to right, #000 10%, red 50%, #000 80% );
+    background-size: 200% auto;
+
+    color:#000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 12s linear infinite;
     
 }
-.top-header > h1 {
-    text-align: center;
+
+@media screen and (min-width: 768px) {
+    .top-header{
+        justify-content: space-around;
+    }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Image} from 'semantic-ui-react'
+import {Card, Image, Button} from 'semantic-ui-react'
 
 function MyCard(props) {
     return(
@@ -8,6 +8,16 @@ function MyCard(props) {
             <Card.Content>
                 <Card.Header>{props.title}</Card.Header>
                 <Card.Description>{props.description}</Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+                <Button className="card-btn-link" target="_blank"href={`https://github.com/thebsking${props.link}`}>
+                    GitHub Repo
+                </Button>
+                <Button href={""} 
+                target="_blank"
+                className="card-btn-link">
+                    Deployed App
+                </Button>
             </Card.Content>
         </Card>
     )
