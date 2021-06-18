@@ -18,14 +18,19 @@ a:hover {
 }
 main > section {
   width: 90%;
-  margin: 0 auto 0 auto;
+  margin: 50px auto 50px auto;
 }
+
 .App {
   text-align: center;
 }
 #welcome {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+#content-wrapper {
+  width: 50%;
 }
 .App-logo {
   height: 40vmin;
@@ -44,9 +49,13 @@ main > section {
   margin-right: auto;
 }
 .skill-container{
+  float: right;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  font-size: 5em;;
+  font-size: 5em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .skill-logo{
   margin: 5px;

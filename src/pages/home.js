@@ -41,7 +41,7 @@ function Home() {
     return (
         <main>
             <section id="welcome">
-                <h3>about me</h3>
+                <h3 className="section-head">about me</h3>
                 <img id="bk-image" src='/assets/bk-headshot.png' alt="headshot" />
                 <div id='content-wrapper'>
 
@@ -50,7 +50,7 @@ function Home() {
                 </div>
             </section>
             <section id="technologies">
-                <h3>skills</h3>
+                <h3 className="section-head">skills</h3>
                 <div className='skill-container'>
                     {skillsArr.map(skill => {
                         return (
@@ -63,9 +63,9 @@ function Home() {
 
             </section>
             <section id="resume">
-                <h3>resume</h3>
+                <h3 className="section-head">resume</h3>
                 <div className="res-container">
-                    <h4>
+                    <h4 className="res-head">
                         education
                     </h4>
                     <p>
@@ -76,13 +76,13 @@ function Home() {
                         <em>full-stack development certificate</em><br />
                         ohio state college of engineering | <strong>2021</strong>
                     </p>
-                    <h4>experience</h4>
+                    <h4 className="res-head">experience</h4>
                     <p>the ohio credit union league | 2021-present</p>
                     <p>big brothers big sisters of central ohio | 2017-2021</p>
                 </div>
             </section>
             <section id="social">
-                <h3>social</h3>
+                <h3 className="section-head">social</h3>
                 <div className='social-container'>
                     <i>github</i>
                     <i>linkedin</i>
