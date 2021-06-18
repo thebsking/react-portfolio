@@ -10,7 +10,7 @@ class Navbar extends Component {
     render() {
         const { activeItem } = this.state
         return (
-            <Menu stackable inverted id='main-nav'>
+            <Menu fluid widths={3} id='main-nav'>
                 <Menu.Item
                     name='home'
                     active={activeItem === 'home'}

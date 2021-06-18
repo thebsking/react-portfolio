@@ -1,8 +1,8 @@
 #bk-logo {
-    height: 50%;
-    width: 50%;
+    height: 25%;
+    width: 25%;
 }
-.header {
+.top-header {
     display: flex;
     background-color: #444;
     justify-content: space-between;
