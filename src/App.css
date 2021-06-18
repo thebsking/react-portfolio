@@ -72,6 +72,7 @@ main > section {
   display: flex;
   justify-content: space-evenly;
 }
+
 .social-link:hover {
   transform: scale(105%);
 }

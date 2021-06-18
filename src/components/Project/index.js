@@ -41,10 +41,10 @@ function Project() {
         },
         {
             title: 'Fleet Sheets',
-            img: '/logo192.png',
+            img: '/assets/fleetsheets.png',
             link: '/FleetSheets',
             description: 'Built with react, a simple interface allows you to see all of your companies employees in an easy to sort list.',
-            link2: ''
+            link2: '/notfound'
         },
 
     ]
