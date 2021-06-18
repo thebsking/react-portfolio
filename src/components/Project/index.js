@@ -8,7 +8,7 @@ function Project() {
         {
             title: 'Loo Review',
             img: '/logo192.png',
-            link: '/loo-review',
+            link: '/Project-02',
             description: 'Think of it as Yelp for bathrooms. This web app utilizes your location to show you the nearest public restrooms, complete with user reviews. '
         },
         {
@@ -31,14 +31,20 @@ function Project() {
         {
             title: 'Employee Directory',
             img: '/logo192.png',
-            link: 'react-directory',
+            link: '/react-directory',
+            description: 'Built with react, a simple interface allows you to see all of your companies employees in an easy to sort list.'
+        },
+        {
+            title: 'Fleet Sheets',
+            img: '/logo192.png',
+            link: '/FleetSheets',
             description: 'Built with react, a simple interface allows you to see all of your companies employees in an easy to sort list.'
         },
 
     ]
     return (
         <div id="project-container">
-            <Card.Group>
+            <Card.Group centered stackable itemsPerRow={2}>
                 {projectArr.map(proj => {
                     return <MyCard {...proj} />
                 })}

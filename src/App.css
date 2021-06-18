@@ -24,6 +24,7 @@ main > section {
 .skill-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  font-size: 5em;;
 }
 .skill-logo{
   margin: 5px;
@@ -40,9 +41,6 @@ main > section {
 }
 .App-link {
   color: #61dafb;
-}
-.colored {
-  font-size: 5em;
 }
 #main-nav {
   margin-top: 0;

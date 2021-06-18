@@ -35,7 +35,7 @@ function Home() {
         },
         {
             desc: 'WordPress',
-            icon: <i class="devicon-wordpress-plain colored"></i>
+            icon: <i class="devicon-wordpress-plain"></i>
         }
     ]
     return (
