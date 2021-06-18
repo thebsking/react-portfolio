@@ -20,7 +20,10 @@ main > section {
   width: 90%;
   margin: 50px auto 50px auto;
 }
-
+.res-head {
+  color: red;
+  background-color: black;
+}
 .App {
   text-align: center;
 }
@@ -39,13 +42,12 @@ main > section {
 #technologies > h3 {
   float: left;
 }
-#resume >h3 {
+#resume > h3 {
   float: left;
-  height: fit-content
 }
 .res-container {
-  width: fit-content;
-  margin-left: auto;
+
+  margin-left: 100px;
   margin-right: auto;
 }
 .skill-container{
@@ -57,11 +59,21 @@ main > section {
   margin-left: auto;
   margin-right: auto;
 }
+.no-deco:hover {
+  text-decoration: none;
+}
 .skill-logo{
   margin: 5px;
 }
 #social > h3 {
   float: left;
+}
+.social-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-link:hover {
+  transform: scale(105%);
 }
 .App-header {
   background-color: #282c34;

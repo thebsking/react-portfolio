@@ -1,4 +1,5 @@
 import React from 'react';
+import {Icon} from 'semantic-ui-react'
 
 function Home() {
     const skillsArr = [
@@ -84,9 +85,9 @@ function Home() {
             <section id="social">
                 <h3 className="section-head">social</h3>
                 <div className='social-container'>
-                    <i>github</i>
-                    <i>linkedin</i>
-                    <i>twitter</i>
+                    <a class='no-deco social-link'href="https://github.com/thebsking"><Icon color='red' size ='huge' name='github' /></a>
+                    <a class='no-deco social-link'href="https://linkedin.com/in/brandonsking"><Icon color="red" name='linkedin' size='huge' /></a>
+                    <a class='no-deco social-link'href="https://twitter.com/thebsking"><Icon name='twitter' size='huge' color="red"/></a>
                 </div>
             </section>
         </main>
