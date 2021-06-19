@@ -14,9 +14,9 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route path="/react-portfolio" component={Home} />
-          <Route path="/react-portfolio/gallery" component={Gallery} />
-          <Route path="/react-portfolio/contact" component={Contact} />
+          <Route exact path="/react-portfolio" component={Home} />
+          <Route exact path="/react-portfolio/gallery" component={Gallery} />
+          <Route exact path="/react-portfolio/contact" component={Contact} />
           <Route component={NotFound} />
         </Switch>
       </Router>

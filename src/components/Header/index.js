@@ -6,7 +6,7 @@ function Header() {
     return(
         <div className='header-wrapper'>
         <div className="top-header">
-            <img id="bk-logo" src="react-portfolio/assets/bk-logo.png" alt="logo"></img>
+            <img id="bk-logo" src="/react-portfolio/assets/bk-logo.png" alt="logo"></img>
             <h1 className="shine">codeByBk</h1>
         </div>
         <Navbar />
