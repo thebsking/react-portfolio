@@ -15,7 +15,7 @@ class Navbar extends Component {
                     name='home'
                     active={activeItem === 'home'}
                     onClick={this.handleItemClick}
-                    href='/'
+                    href='/react-portfolio'
                     color='red'
                 >
                     home
@@ -24,7 +24,7 @@ class Navbar extends Component {
                     name='portfolio'
                     active={activeItem === 'portfolio'}
                     onClick={this.handleItemClick}
-                    href='/gallery'
+                    href='/react-portfolio/gallery'
                     color='red'
                 >
                     portfolio
@@ -34,7 +34,7 @@ class Navbar extends Component {
                     name='contact'
                     active={activeItem === 'contact'}
                     onClick={this.handleItemClick}
-                    href='/contact'
+                    href='/react-portfolio/contact'
                 >
                     contact
                 </Menu.Item>

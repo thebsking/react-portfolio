@@ -12,11 +12,11 @@ function App() {
   return (
     <>
       <Header />
-      <Router basename='/react-portfolio'>
+      <Router>
         <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/gallery" component={Gallery} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/react-portfolio" component={Home} />
+          <Route path="/react-portfolio/gallery" component={Gallery} />
+          <Route path="/react-portfolio/contact" component={Contact} />
           <Route component={NotFound} />
         </Switch>
       </Router>
