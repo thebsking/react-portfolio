@@ -43,11 +43,11 @@ function Home() {
         <main>
             <section id="welcome">
                 <h3 className="section-head">about me</h3>
-                <img id="bk-image" src='%PUBLIC_URL%/assets/bk-headshot.png' alt="headshot" />
+                <img id="bk-image" src='/assets/bk-headshot.png' alt="headshot" />
                 <div id='content-wrapper'>
 
                     <p>hi, i am brandon. i am a full-stack web developer located in columbus,oh. i am a musician that loves facts and figures. that blend of analytical and creative thinking is what drew me to coding.</p>
-                    <p>i am currently available for freelance work. you can view some of my recent projects <a href='%PUBLIC_URL%/#/gallery'>here</a>. if you would like to work with me you can contact me <a href='%PUBLIC_URL%/#/contact'>here</a>.</p>
+                    <p>i am currently available for freelance work. you can view some of my recent projects <a href='/gallery'>here</a>. if you would like to work with me you can contact me <a href='/contact'>here</a>.</p>
                 </div>
             </section>
             <section id="technologies">

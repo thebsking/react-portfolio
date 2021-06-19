@@ -1,7 +1,7 @@
 import Footer from '../src/components/Footer'
 import Header from '../src/components/Header';
-import Home from '../src/pages/Home'
-import { HashRouter, Route } from 'react-router-dom';
+import Home from './pages/home'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import React from 'react';
 import Gallery from './pages/Gallery';
@@ -12,12 +12,15 @@ function App() {
   return (
     <>
       <Header />
-      <HashRouter>
+      <Router basename='/react-portfolio'>
+        <Switch>
           <Route path="/" component={Home} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/contact" component={Contact} />
           <Route component={NotFound} />
-      </HashRouter>
+        </Switch>
+      </Router>
+
       <Footer />
     </>
   );
