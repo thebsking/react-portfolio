@@ -43,7 +43,7 @@ function Home() {
         <main>
             <section id="welcome">
                 <h3 className="section-head">about me</h3>
-                <img id="bk-image" src='/react-portfolio/assets/bk-headshot.png' alt="headshot" />
+                <img id="bk-image" src='./assets/bk-headshot.png' alt="headshot" />
                 <div id='content-wrapper'>
 
                     <p>hi, i am brandon. i am a full-stack web developer located in columbus,oh. i am a musician that loves facts and figures. that blend of analytical and creative thinking is what drew me to coding.</p>
