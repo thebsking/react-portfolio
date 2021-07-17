@@ -72,7 +72,9 @@ main > section {
   display: flex;
   justify-content: space-evenly;
 }
-
+#bk-logo {
+  width: 25%;
+}
 .social-link:hover {
   transform: scale(105%);
 }
