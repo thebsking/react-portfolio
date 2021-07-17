@@ -47,7 +47,7 @@ function Home() {
                 <div id='content-wrapper'>
 
                     <p>hi, i am brandon. i am a full-stack web developer located in columbus,oh. i am a musician that loves facts and figures. that blend of analytical and creative thinking is what drew me to coding.</p>
-                    <p>i am currently available for freelance work. you can view some of my recent projects <a href='/react-portfolio/gallery'>here</a>. if you would like to work with me you can contact me <a href='/react-portfolio/contact'>here</a>.</p>
+                    <p>i am currently available for freelance work. you can view some of my recent projects <a href='/gallery'>here</a>. if you would like to work with me you can contact me <a href='/contact'>here</a>.</p>
                 </div>
             </section>
             <section id="technologies">
