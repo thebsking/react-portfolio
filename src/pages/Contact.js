@@ -16,10 +16,11 @@ function Contact() {
                 <Form.Input type="text" placeholder="subject" />
                 <Form.TextArea placeholder="your message" />
                 <Message id='msg' hidden success header='message sent' content='thanks for reaching out.' />
-                <Button onClick={showMsg}>Submit</Button>
+                <Button disabled onClick={showMsg}>Submit</Button>
+                <p>*contact form temporarily disabled*</p><p>please use email address below</p>
             </Form>
             <br/><br />
-            <p>or you can email me directly at codebybk@gmail.com</p>
+            <p>or you can email me directly at <a href="mailto:codebybk@gmail.com">codebybk@gmail.com</a></p>
         </div>
         </main>
     )
