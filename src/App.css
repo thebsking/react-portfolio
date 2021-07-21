@@ -82,7 +82,10 @@ main > section {
   margin: 50px auto 10px auto;
   width: 80%;
 }
-
+#res-btn {
+  color: black;
+  margin-top: 5px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
