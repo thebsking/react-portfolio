@@ -44,7 +44,7 @@ function Project() {
             img: '/assets/fleetsheets.png',
             link: '/FleetSheets',
             description: 'Built with react, a simple interface allows you to see all of your companies employees in an easy to sort list.',
-            link2: 'react-portfolio/notfound'
+            link2: 'https://custom-workforce-manager.herokuapp.com/'
         },
 
     ]
