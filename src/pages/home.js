@@ -4,11 +4,11 @@ import { Icon, Button } from 'semantic-ui-react'
 function Home() {
     const skillsArr = [
         {
-            desc: 'HTML5',
+            desc: 'HTML',
             icon: <i className="devicon-html5-plain colored" />
         },
         {
-            desc: 'CSS3',
+            desc: 'CSS',
             icon: <i className="devicon-css3-plain colored" />
         },
         {
@@ -27,11 +27,11 @@ function Home() {
             icon: <i className="devicon-git-plain colored" />
         },
         {
-            desc: 'handlebars',
+            desc: 'Handlebars.js',
             icon: <i className="devicon-handlebars-plain colored" />
         },
         {
-            desc: 'React',
+            desc: 'React.js',
             icon: <i className="devicon-react-plain colored" />
         },
         {
@@ -55,9 +55,12 @@ function Home() {
                 <div className='skill-container'>
                     {skillsArr.map(skill => {
                         return (
-
+                            <div>
+                            <span className='skill-desc'>{skill.desc}</span>
+                            <br />
                             <span className='skill-logo'>{skill.icon}</span>
-
+                            
+                            </div>
                         )
                     })}
                 </div>
