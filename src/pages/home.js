@@ -4,11 +4,11 @@ import { Icon, Button } from 'semantic-ui-react'
 function Home() {
     const skillsArr = [
         {
-            desc: 'HTML5',
+            desc: 'HTML',
             icon: <i className="devicon-html5-plain colored" />
         },
         {
-            desc: 'CSS3',
+            desc: 'CSS',
             icon: <i className="devicon-css3-plain colored" />
         },
         {
@@ -27,16 +27,16 @@ function Home() {
             icon: <i className="devicon-git-plain colored" />
         },
         {
-            desc: 'handlebars',
+            desc: 'Handlebars.js',
             icon: <i className="devicon-handlebars-plain colored" />
         },
         {
-            desc: 'React',
+            desc: 'React.js',
             icon: <i className="devicon-react-plain colored" />
         },
         {
             desc: 'WordPress',
-            icon: <i class="devicon-wordpress-plain"></i>
+            icon: <i className="devicon-wordpress-plain"></i>
         }
     ]
     return (
@@ -55,9 +55,12 @@ function Home() {
                 <div className='skill-container'>
                     {skillsArr.map(skill => {
                         return (
+                            <div key={skill.desc}>
+                                <span className='skill-desc'>{skill.desc}</span>
+                                <br />
+                                <span className='skill-logo'>{skill.icon}</span>
 
-                            <span className='skill-logo'>{skill.icon}</span>
-
+                            </div>
                         )
                     })}
                 </div>
@@ -82,14 +85,14 @@ function Home() {
                     <p>big brothers big sisters of central ohio | 2017-2021</p>
                     <Button id="res-btn" color="red" href="/assets/bk-resume.pdf">Download Resume</Button>
                 </div>
-                
+
             </section>
             <section id="social">
                 <h3 className="section-head">social</h3>
                 <div className='social-container'>
-                    <a class='no-deco social-link' href="https://github.com/thebsking"><Icon color='red' size='huge' name='github' /></a>
-                    <a class='no-deco social-link' href="https://linkedin.com/in/brandonsking"><Icon color="red" name='linkedin' size='huge' /></a>
-                    <a class='no-deco social-link' href="https://twitter.com/thebsking"><Icon name='twitter' size='huge' color="red" /></a>
+                    <a className='no-deco social-link' href="https://github.com/thebsking"><Icon color='red' size='huge' name='github' /></a>
+                    <a className='no-deco social-link' href="https://linkedin.com/in/brandonsking"><Icon color="red" name='linkedin' size='huge' /></a>
+                    <a className='no-deco social-link' href="https://twitter.com/thebsking"><Icon name='twitter' size='huge' color="red" /></a>
                 </div>
             </section>
         </main>

@@ -27,7 +27,7 @@ class Navbar extends Component {
                     href='/gallery'
                     color='red'
                 >
-                    portfolio
+                    projects
                 </Menu.Item>
                 <Menu.Item
                     color='red'
