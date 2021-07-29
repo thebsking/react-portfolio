@@ -83,7 +83,7 @@ function Home() {
                     <h4 className="res-head">experience</h4>
                     <p>the ohio credit union league | 2021-present</p>
                     <p>big brothers big sisters of central ohio | 2017-2021</p>
-                    <Button id="res-btn" color="red" href="/assets/bk-resume.pdf">Download Resume</Button>
+                    <Button id="res-btn" color="red" href="./assets/bk-resume.pdf">Download Resume</Button>
                 </div>
 
             </section>
