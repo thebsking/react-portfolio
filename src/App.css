@@ -122,6 +122,12 @@ main > section {
 .ui.item.menu > a:hover{
   color: red;
 }
+.form-btn > .ui.input> input{
+  background-color: red;
+  color: black;
+  text-align: center;
+}
+
 @media screen and (min-width:768px) {
   #bk-logo {
     width: 10%;

@@ -28,7 +28,7 @@ function Contact() {
                 <Form.Input type="email" name="from_email" placeholder="you@email.com" />
                 <Form.TextArea name="message" placeholder="your message" />
                 <Message id='msg' hidden success header='message sent' content='thanks for reaching out.' />
-                <Form.Input type="submit" value="Send" />
+                <Form.Input className="form-btn" type="submit" value="Send" />
                
             </Form>
             <br/><br />
