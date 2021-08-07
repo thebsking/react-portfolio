@@ -15,7 +15,7 @@ function Contact() {
             showMsg();
         }, (error) =>{
             console.log(error.text)
-            console.log(process.env.REACT_APP_EMAIL_ID)
+            window.alert('message send error; please contact at brandon@codebybk.com')
         })
     }
     return(
@@ -29,7 +29,7 @@ function Contact() {
                 <Form.TextArea name="message" placeholder="your message" />
                 <Message id='msg' hidden success header='message sent' content='thanks for reaching out.' />
                 <Form.Input type="submit" value="Send" />
-                {/* <p>*contact form temporarily disabled*</p><p>please use email address below</p> */}
+               
             </Form>
             <br/><br />
             <p>or you can email me directly at <a href="mailto:codebybk@gmail.com">codebybk@gmail.com</a></p>
