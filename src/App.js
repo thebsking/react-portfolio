@@ -14,9 +14,9 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/gallery" component={Gallery} />
-          <Route exact path="/contact" component={Contact} />
+          <Route  path="/" component={Home} />
+          <Route  path="/gallery" component={Gallery} />
+          <Route  path="/contact" component={Contact} />
           <Route component={NotFound} />
         </Switch>
       </Router>
